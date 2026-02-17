@@ -1,10 +1,11 @@
 while True:
-    N = input("Введите целое число N: ")
-    if N("-").isdigit():
-        N = int(N)
+    A = input("Введите целое число N: ")
+    if A.lstrip("-").isdigit():
+        N = int(A)
         break
     else:
         print("Ошибка! Введите целое число.")
 
 for i in range(1, N + 1):
     print(i)
+
